@@ -52,6 +52,8 @@ If macOS says the app "is damaged and can't be opened", the build isn't notarize
 xattr -cr "/Applications/Blanket Bin.app"
 ```
 
+Copy the whole line, including the closing `"`. If Terminal shows `dquote>`, the quote got lost: press **Control-C** and paste it again. You can also type `xattr -cr ` (with a space at the end), drag **Blanket Bin** from Applications into the Terminal window, and press Return.
+
 **Requires** macOS 13 Ventura or later. It runs natively on Apple Silicon and Intel Macs.
 
 ## Permissions
