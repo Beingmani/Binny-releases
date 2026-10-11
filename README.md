@@ -44,7 +44,7 @@ Top row: Persian rug, wool tartan, chunky knit, stonewashed linen. Bottom row: p
 
 1. Download the latest **Blanket Bin `.dmg`** from [Releases](https://github.com/Beingmani/BlanketBin-releases/releases).
 2. Open it and drag **Blanket Bin** into **Applications**.
-3. Open Blanket Bin. Its icon appears in the menu bar, not in the Dock.
+3. Open Blanket Bin. A short setup walks you through the permissions and lets you pick a blanket. When you finish, Blanket Bin leaves the Dock and lives in the menu bar.
 
 If macOS says the app "is damaged and can't be opened", the build isn't notarized by Apple yet. The app is fine. Open **Terminal**, run this command, and open the app again:
 
@@ -58,7 +58,7 @@ Copy the whole line, including the closing `"`. If Terminal shows `dquote>`, the
 
 ## Permissions
 
-Blanket Bin needs two permissions. Until you grant them, the menu bar panel shows a notice with a button that opens the right page in **System Settings → Privacy & Security**.
+Blanket Bin needs two permissions. Setup asks for both and opens the right page in **System Settings → Privacy & Security**. If you skip one, the menu bar panel shows a notice with the same button.
 
 | Permission | Why it needs it |
 |---|---|
