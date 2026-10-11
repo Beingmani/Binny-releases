@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
   - name: Download Blanket Bin
-    url: https://github.com/Beingmani/BlanketBin-releases/releases/latest
-    about: The latest version, with install steps.
+    url: https://github.com/Beingmani/BlanketBin-releases/releases
+    about: Every version, with install steps.

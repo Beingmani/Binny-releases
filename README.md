@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Beingmani/BlanketBin-releases/releases/latest"><strong>Download for Mac</strong></a> ·
+  <a href="https://github.com/Beingmani/BlanketBin-releases/releases"><strong>Download for Mac</strong></a> ·
   <a href="https://github.com/Beingmani/BlanketBin-releases/releases">All releases</a> ·
   <a href="https://github.com/Beingmani/BlanketBin-releases/issues/new/choose">Report a bug</a>
 </p>
@@ -42,7 +42,7 @@ Top row: Persian rug, wool tartan, chunky knit, stonewashed linen. Bottom row: p
 
 ## Install
 
-1. Download the latest **Blanket Bin `.dmg`** from [Releases](https://github.com/Beingmani/BlanketBin-releases/releases/latest).
+1. Download the latest **Blanket Bin `.dmg`** from [Releases](https://github.com/Beingmani/BlanketBin-releases/releases).
 2. Open it and drag **Blanket Bin** into **Applications**.
 3. Open Blanket Bin. Its icon appears in the menu bar, not in the Dock.
 
