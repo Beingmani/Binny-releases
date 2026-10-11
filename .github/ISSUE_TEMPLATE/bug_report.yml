@@ -1,0 +1,85 @@
+name: Bug report
+description: Something is broken or not working as expected
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Steps to reproduce help most, and a screenshot or screen recording of the Dock helps even more.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - The blanket on the Dock
+        - Flies and smell
+        - Menu bar panel
+        - Settings
+        - Permissions
+        - Trash size or emptying
+        - Install / launch / updates
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Fill the Trash past the limit
+        2. Drag the blanket …
+        3. …
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: At the bottom of Settings, next to Check for Updates
+      placeholder: e.g. 1.0.0-beta.2
+    validations:
+      required: true
+
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: e.g. macOS 15.5, Apple Silicon
+    validations:
+      required: false
+
+  - type: dropdown
+    id: appearance
+    attributes:
+      label: Appearance
+      options:
+        - Light
+        - Dark
+        - Both / not related
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots, logs, or other context
+      description: Optional. Remove personal paths or data.

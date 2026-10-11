@@ -1,0 +1,43 @@
+name: Feature request
+description: Suggest an idea
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the problem first. The best solution may differ from the first idea.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      placeholder: When I …, I have to …
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: What would you like the app to do?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you've tried
+      description: Optional. Other apps or workarounds.
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: How much does this matter to you?
+      options:
+        - Nice to have
+        - Would use it regularly
+        - Blocking my work
+    validations:
+      required: false
