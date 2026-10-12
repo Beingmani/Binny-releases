@@ -54,7 +54,7 @@ xattr -cr "/Applications/Blanket Bin.app"
 
 Copy the whole line, including the closing `"`. If Terminal shows `dquote>`, the quote got lost: press **Control-C** and paste it again. You can also type `xattr -cr ` (with a space at the end), drag **Blanket Bin** from Applications into the Terminal window, and press Return.
 
-**Requires** macOS 13 Ventura or later. It runs natively on Apple Silicon and Intel Macs.
+**Requires** macOS 13 Ventura or later. Blanket Bin is a native Mac app, a 3 MB download, and runs on Apple Silicon and Intel Macs. On macOS 26 it uses Liquid Glass.
 
 ## Permissions
 
