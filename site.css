@@ -1,0 +1,79 @@
+/* Binny website: only what's Binny's own. Everything else comes from studio.css (loaded first).
+   Flat colours and hairlines only, per the studio rules (mobileapps/web-studio/README.md).
+   The accent is the app's brand text colour (Color.brandText in macos/Sources/Binny/Glass.swift). */
+
+:root {
+  --accent-light: #b0402a; --accent-dark: #f28f7a;
+  --on-accent-light: #fff; --on-accent-dark: #1c0b06;
+
+  /* "Ink": fabric colours that read on the page, used as the studio --tint for icons and chips. */
+  --ink-rust: #b0402a; --ink-indigo: #2f4a8a; --ink-moss: #5e7a2e; --ink-gold: #8a5a00; --ink-slate: #4b5260;
+  --live: #22a355;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink-rust: #f28f7a; --ink-indigo: #8fa6e8; --ink-moss: #a9c46a; --ink-gold: #f4b740; --ink-slate: #9aa1ae;
+    --live: #34c46a;
+  }
+}
+
+.fine { margin-top: 14px; font-size: 12px; line-height: 16px; color: var(--muted-fg); }
+.note { margin-top: 16px; font-size: 13px; line-height: 1.6; color: var(--muted-fg); }
+.note b { display: inline-flex; align-items: center; gap: 6px; margin-right: 8px; color: var(--fg); font-weight: 700; }
+.note b::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--live); }
+
+/* -- Hero demo: the app's cloth on its bin, in a hairline card ------------------------------------ */
+.demo {
+  max-width: 64rem; margin-top: 56px; padding: 20px 16px; border-radius: var(--radius-2xl);
+  border: 1px solid var(--line); background: var(--card);
+}
+.live {
+  display: inline-flex; align-items: center; gap: 8px; padding: 5px 12px 5px 10px; border-radius: 999px;
+  border: 1px solid var(--line); background: var(--bg); font-size: 12px; line-height: 16px; font-weight: 500; color: var(--muted-fg);
+}
+.live b { width: 8px; height: 8px; border-radius: 50%; background: var(--live); }
+.demo-stage { position: relative; width: min(640px, 100%); aspect-ratio: 4 / 3; margin: 8px auto 0; }
+.demo-stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; touch-action: none; }
+.demo-stage canvas[data-over="cloth"] { cursor: grab; }
+.demo-stage canvas[data-grabbing="true"] { cursor: grabbing; }
+.demo-stage .fallback { display: none; width: 100%; height: 100%; object-fit: contain; border-radius: var(--radius-xl); }
+.demo-stage.no-webgl canvas { display: none; }
+.demo-stage.no-webgl .fallback { display: block; }
+
+.demo-controls { display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: 8px; }
+.levels {
+  display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 2px; padding: 3px; max-width: 100%;
+  border-radius: calc(var(--radius) + 3px); border: 1px solid var(--line); background: var(--surface-2);
+}
+.levels button {
+  padding: 6px 12px; border-radius: var(--radius); border: 1px solid transparent; background: none; cursor: pointer;
+  font: inherit; font-size: 12px; font-weight: 700; letter-spacing: -0.025em; color: var(--muted-fg);
+}
+.levels button:hover { color: var(--fg); }
+.levels button[aria-pressed="true"] { background: var(--card); border-color: var(--line); color: var(--fg); }
+.demo-status { min-height: 20px; font-size: 13px; line-height: 20px; color: var(--muted-fg); }
+.swatches { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.swatch {
+  width: 36px; height: 36px; padding: 0; border-radius: 50%; overflow: hidden; cursor: pointer;
+  border: 1px solid var(--line); background: var(--surface-2); transition: scale .15s;
+}
+.swatch:active { scale: 0.96; }
+.swatch img { width: 100%; height: 100%; object-fit: cover; }
+.swatch[aria-pressed="true"] { outline: 2px solid var(--accent); outline-offset: 2px; }
+.levels button:focus-visible, .swatch:focus-visible, .card.fabric:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (min-width: 768px) { .demo { padding: 24px 32px; } }
+
+/* -- Fabric cards: a swatch, its name and how it hangs; clicking one puts it on the demo bin ------ */
+.card.fabric { font: inherit; color: inherit; text-align: left; cursor: pointer; }
+.card.fabric:hover { transform: translateY(-2px); border-color: var(--line-strong); background: color-mix(in srgb, var(--secondary) 30%, var(--bg)); }
+.card.fabric img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: var(--radius-xl); border: 1px solid var(--line); }
+.card.fabric:hover .card-link { color: var(--fg); }
+.cards.fabrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (min-width: 1024px) { .cards.fabrics { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+
+/* -- Permissions: two hairline rows under the privacy cards ------------------------------------- */
+.perms { display: grid; gap: 12px; margin-top: 12px; }
+@media (min-width: 768px) { .perms { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.perm { display: flex; align-items: flex-start; gap: 14px; padding: 16px 20px; border-radius: var(--radius-2xl); border: 1px solid var(--line); background: var(--bg); }
+.perm strong { display: block; font-size: 15px; font-weight: var(--w-strong); letter-spacing: -0.025em; }
+.perm span:not(.icon) { display: block; margin-top: 2px; font-size: 13px; line-height: 1.6; color: var(--muted-fg); }
