@@ -11,6 +11,7 @@
 
 <p align="center">
   <a href="https://github.com/Beingmani/Binny-releases/releases/latest/download/Binny.dmg"><strong>Download for Mac</strong></a> ·
+  <a href="https://beingmani.github.io/Binny-releases/">Website</a> ·
   <a href="https://github.com/Beingmani/Binny-releases/releases">All releases</a> ·
   <a href="https://github.com/Beingmani/Binny-releases/issues/new/choose">Report a bug</a>
 </p>
@@ -38,7 +39,7 @@ The cloth is simulated, not animated, so it falls, slides and folds differently 
   <img src="images/fabrics.png" alt="The eight fabrics draped over the Trash" />
 </p>
 
-Top row: Persian rug, wool tartan, chunky knit, stonewashed linen. Bottom row: patchwork quilt, emerald silk, buffalo-check flannel, striped serape. Each fabric hangs its own way: silk floats down in fine folds, and a quilt drops heavy and stiff.
+Top row: Persian rug, wool tartan, faded denim, rust corduroy. Bottom row: patchwork quilt, emerald silk, buffalo-check flannel, striped serape. Each fabric hangs its own way: silk floats down in fine folds, and a quilt drops heavy and stiff.
 
 ## Install
 
