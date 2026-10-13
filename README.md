@@ -1,18 +1,18 @@
 <p align="center">
-  <img src="images/icon.png" width="128" alt="Blanket Bin icon" />
+  <img src="images/icon.png" width="128" alt="Binny icon" />
 </p>
 
-<h1 align="center">Blanket Bin</h1>
+<h1 align="center">Binny</h1>
 
 <p align="center">
-  When your Trash gets messy, Blanket Bin throws a blanket over it.<br />
+  When your Trash gets messy, Binny throws a blanket over it.<br />
   A cozy, real-time cloth simulation draped over the Trash in your Dock.
 </p>
 
 <p align="center">
-  <a href="https://github.com/Beingmani/BlanketBin-releases/releases"><strong>Download for Mac</strong></a> ·
-  <a href="https://github.com/Beingmani/BlanketBin-releases/releases">All releases</a> ·
-  <a href="https://github.com/Beingmani/BlanketBin-releases/issues/new/choose">Report a bug</a>
+  <a href="https://github.com/Beingmani/Binny-releases/releases/latest/download/Binny.dmg"><strong>Download for Mac</strong></a> ·
+  <a href="https://github.com/Beingmani/Binny-releases/releases">All releases</a> ·
+  <a href="https://github.com/Beingmani/Binny-releases/issues/new/choose">Report a bug</a>
 </p>
 
 <p align="center">
@@ -23,7 +23,7 @@
 
 ## What it does
 
-Blanket Bin sits in your menu bar and keeps an eye on the Trash. Once the Trash passes a limit you choose, a blanket drops onto the Trash icon in your Dock, drapes over it and settles into folds.
+Binny sits in your menu bar and keeps an eye on the Trash. Once the Trash passes a limit you choose, a blanket drops onto the Trash icon in your Dock, drapes over it and settles into folds.
 
 - **It grows with the mess.** The fuller the Trash, the bigger and lumpier the blanket. Every file you delete makes a lump pop up and the blanket jump.
 - **It gets smelly.** A faint smell seeps out from under the blanket, and houseflies arrive. They loop around the bin, land on the blanket, walk about and clean their wings.
@@ -42,32 +42,28 @@ Top row: Persian rug, wool tartan, chunky knit, stonewashed linen. Bottom row: p
 
 ## Install
 
-1. Download the latest **Blanket Bin `.dmg`** from [Releases](https://github.com/Beingmani/BlanketBin-releases/releases).
-2. Open it and drag **Blanket Bin** into **Applications**.
-3. Open Blanket Bin. A short setup walks you through the permissions and lets you pick a blanket. When you finish, Blanket Bin leaves the Dock and lives in the menu bar.
+1. [Download **Binny.dmg**](https://github.com/Beingmani/Binny-releases/releases/latest/download/Binny.dmg).
+2. Open it and drag **Binny** into **Applications**.
+3. Open Binny. A short setup walks you through the permissions and lets you pick a blanket. When you finish, Binny leaves the Dock and lives in the menu bar.
 
-If macOS says the app "is damaged and can't be opened", the build isn't notarized by Apple yet. The app is fine. Open **Terminal**, run this command, and open the app again:
+Binny is signed and notarized by Apple, so it opens like any other app.
 
-```bash
-xattr -cr "/Applications/Blanket Bin.app"
-```
+Used **Blanket Bin** before? Binny is the same app with a new name. It brings your settings over, quits Blanket Bin and moves it to the Trash. macOS asks for the two permissions once more.
 
-Copy the whole line, including the closing `"`. If Terminal shows `dquote>`, the quote got lost: press **Control-C** and paste it again. You can also type `xattr -cr ` (with a space at the end), drag **Blanket Bin** from Applications into the Terminal window, and press Return.
-
-**Requires** macOS 13 Ventura or later. Blanket Bin is a native Mac app, a 3 MB download, and runs on Apple Silicon and Intel Macs. On macOS 26 it uses Liquid Glass.
+**Requires** macOS 13 Ventura or later. Binny is a native Mac app, a 3 MB download, and runs on Apple Silicon and Intel Macs. On macOS 26 it uses Liquid Glass.
 
 ## Permissions
 
-Blanket Bin needs two permissions. Setup asks for both and opens the right page in **System Settings → Privacy & Security**. If you skip one, the menu bar panel shows a notice with the same button.
+Binny needs two permissions. Setup asks for both and opens the right page in **System Settings → Privacy & Security**. If you skip one, the menu bar panel shows a notice with the same button.
 
 | Permission | Why it needs it |
 |---|---|
 | **Accessibility** | Finds where the Trash icon is in your Dock, so the blanket lands on it |
-| **Full Disk Access** | Measures how big your Trash is. Without it, Blanket Bin counts items instead |
+| **Full Disk Access** | Measures how big your Trash is. Without it, Binny counts items instead |
 
-Blanket Bin also asks once to control **Finder**, so it can open and empty the Trash for you.
+Binny also asks once to control **Finder**, so it can open and empty the Trash for you.
 
-Blanket Bin never reads, uploads or deletes your files. It only measures the size of the Trash, and it collects no analytics.
+Binny never reads, uploads or deletes your files. It only measures the size of the Trash, and it collects no analytics.
 
 ## Using it
 
@@ -84,21 +80,21 @@ Blanket Bin never reads, uploads or deletes your files. It only measures the siz
 
 ## Updates
 
-Blanket Bin checks for new versions and tells you in the menu bar panel when one is out. Download it from [Releases](https://github.com/Beingmani/BlanketBin-releases/releases) and drag it into Applications. Your settings stay.
+Binny updates itself. New versions download in the background, and the menu bar panel shows **Restart to update**; if you leave it, the update installs the next time Binny quits. Your settings and permissions stay. To check now, right-click the menu bar icon and choose **Check for Updates…**
 
 ## Questions
 
-**Does it delete anything?** No. Blanket Bin only empties the Trash when you click Empty Trash and confirm it.
+**Does it delete anything?** No. Binny only empties the Trash when you click Empty Trash and confirm it.
 
 **Does it slow my Mac down?** The blanket stops simulating as soon as it settles. Flies keep moving at a low frame rate, and you can turn them off in Settings.
 
-**The blanket isn't on the Trash.** Check that Accessibility is on for Blanket Bin in System Settings → Privacy & Security. If it still misses, [report it](https://github.com/Beingmani/BlanketBin-releases/issues/new/choose) with a screenshot of your Dock.
+**The blanket isn't on the Trash.** Check that Accessibility is on for Binny in System Settings → Privacy & Security. If it still misses, [report it](https://github.com/Beingmani/Binny-releases/issues/new/choose) with a screenshot of your Dock.
 
-**How do I uninstall it?** Quit it from the menu bar icon and drag **Blanket Bin** from Applications to the Trash. Then it gets a blanket too.
+**How do I uninstall it?** Quit it from the menu bar icon and drag **Binny** from Applications to the Trash. Then it gets a blanket too.
 
 ## Feedback
 
-Found a bug or have an idea? [Open an issue](https://github.com/Beingmani/BlanketBin-releases/issues/new/choose) and include your Blanket Bin and macOS versions.
+Found a bug or have an idea? [Open an issue](https://github.com/Beingmani/Binny-releases/issues/new/choose) and include your Binny and macOS versions.
 
 <p align="center">
   <sub>Made by <a href="https://github.com/Beingmani">BeingMani</a></sub>
