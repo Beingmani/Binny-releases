@@ -59,6 +59,23 @@
       <div class="demo-stage">
         <canvas id="blanket" aria-label="A blanket draped over a Trash can, with flies circling it. Drag it to move it."></canvas>
         <img class="fallback" src="hero.webp" alt="A rug draped over the Trash, with flies circling it">
+        <!-- Shown until the real blanket draws its first frame: the bin draws itself, then a blanket drops on and lifts off. -->
+        <div class="loader" role="status">
+          <svg viewBox="0 0 200 150" aria-hidden="true">
+            <ellipse class="floor" cx="100" cy="131" rx="52" ry="4"/>
+            <g class="bin">
+              <path class="body" pathLength="100" d="M68 72 L72 124 Q72.5 130 79 130 L121 130 Q127.5 130 128 124 L132 72"/>
+              <rect class="rim" pathLength="100" x="62" y="64" width="76" height="9" rx="4.5"/>
+              <path class="ribs" pathLength="100" d="M88 82 L89 120 M100 82 V120 M112 82 L111 120"/>
+            </g>
+            <g class="cloth">
+              <path d="M42 132 C47 110 52 84 57 70 C60 57 140 57 143 70 C148 84 153 110 158 132 C150 128 143 135 135 130 C127 135 120 128 112 133 C104 128 96 135 88 130 C80 135 73 128 65 133 C57 128 50 135 42 132 Z"/>
+              <path class="fold" d="M82 76 C80 98 77 116 74 130 M118 76 C120 98 123 116 126 130"/>
+              <path class="stripe" d="M50 114 C72 108 128 108 150 114 M55 96 C74 90 126 90 145 96"/>
+            </g>
+          </svg>
+          <span>Weaving the blanket…</span>
+        </div>
       </div>
       <div class="demo-controls">
         <div class="levels" role="group" aria-label="How full the Trash is">
