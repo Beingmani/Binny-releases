@@ -11,7 +11,8 @@
 
 <p align="center">
   <a href="https://github.com/Beingmani/Binny-releases/releases/latest/download/Binny.dmg"><strong>Download for Mac</strong></a> ·
-  <a href="https://beingmani.github.io/Binny-releases/">Website</a> ·
+  <a href="https://buy.polar.sh/polar_cl_EsBoZazoXR"><strong>Buy a license</strong></a> ·
+  <a href="https://binny.manivannan.design/">Website</a> ·
   <a href="https://github.com/Beingmani/Binny-releases/releases">All releases</a> ·
   <a href="https://github.com/Beingmani/Binny-releases/issues/new/choose">Report a bug</a>
 </p>
@@ -46,6 +47,7 @@ Top row: Persian rug, wool tartan, faded denim, rust corduroy. Bottom row: patch
 1. [Download **Binny.dmg**](https://github.com/Beingmani/Binny-releases/releases/latest/download/Binny.dmg).
 2. Open it and drag **Binny** into **Applications**.
 3. Open Binny. A short setup walks you through the permissions and lets you pick a blanket. When you finish, Binny leaves the Dock and lives in the menu bar.
+4. Paste the license key from your purchase. No key yet? [Buy one](https://buy.polar.sh/polar_cl_EsBoZazoXR). Each key works on one Mac.
 
 Binny is signed and notarized by Apple, so it opens like any other app.
 
